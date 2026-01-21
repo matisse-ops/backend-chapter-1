@@ -17,7 +17,14 @@ let data = {
 // Type 1 - Website endpoints (These end points are for sending back html and they typically come when a user enetrs a url in a browser)
 
 app.get('/', (req, res) => {
-    res.send('<h1>homepage</h1>')
+    res.send(`
+        <body 
+        style = "background: pink;
+        color: blue;">
+        <h1>DATA:</h1>
+            <p>${JSON.stringify(data)}</p>
+        </body>
+    `)
  })
  
  app.get('/dashboard', (req, res) => {
@@ -25,6 +32,8 @@ app.get('/', (req, res) => {
  })
 
 // Type 2 - API endpoints (non visual)
+
+//CRUD-method create-post read-get update-put and delete-delete
 
 app.get('/api/data', (rq, res) => {
     console.log('This one is for data')
