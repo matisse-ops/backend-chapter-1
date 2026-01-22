@@ -22,11 +22,16 @@ This project is a lightweight demonstration of a **RESTful API** and **Web Serve
 1. **Clone the repository:**
    ```bash
    git clone <your-repository-url>
+
+2. **Install packages**
+   ```bash
+   npm install
+   ```
    
-2. **Start the server:**
+3. **Start the server:**
    The server will be live at http://localhost:8383
   ```bash
-  node server.js
+  nmp run dev
 ```
 ## API Endpoints
 **Website Routes:**
